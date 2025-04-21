@@ -19,7 +19,7 @@ function Fetchapi() {
     
          
     function handleClick(id){
-        setUserId(id)
+        setUserId(prev=>prev==id ?null : id) 
         
     }
 
